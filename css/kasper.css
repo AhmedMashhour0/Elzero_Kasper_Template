@@ -12,8 +12,29 @@ body {
 ul {
     list-style: none;
 }
-
 a {
-    underlin
+    text-decoration: none;
 }
-/* Global Rules-End  */
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 730px;
+    }
+}
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 950px;
+    }
+}
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1150px;
+    }
+}
+/* Global Rules-End */
