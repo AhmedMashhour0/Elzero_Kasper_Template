@@ -15,6 +15,9 @@
 }
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #777;
+    background-image: url(../images/landing.jpg);
+    background-size: cover
 }
 ul {
     list-style: none;
@@ -45,3 +48,51 @@ a {
     }
 }
 /* Global Rules-End */
+
+/* Header-Start */
+header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .container::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 40px);
+    border-bottom: 1px solid var(--main-color);
+    bottom: 0;
+    left: 20px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    padding: 40px 10px;
+}
+header nav ul li a {
+    color: white;
+}
+.search {
+    font-size: 18px;
+    color: white;
+    margin-left: 20px;
+    position: relative;
+    border-left: 1px solid white;
+    width: 40px;
+    height: 20px;
+    align-content: flex-end;
+}
+
+/* Header-End */
