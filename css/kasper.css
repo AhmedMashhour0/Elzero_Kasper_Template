@@ -1,6 +1,7 @@
 /* Variables-Start */
 :root {
     --main-color: #19c8fa;
+    --main-transition: 0.5s;
     
 }
 /* Variables-End */
@@ -66,9 +67,10 @@ header .container::after {
     content: "";
     position: absolute;
     width: calc(100% - 40px);
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid #a2a2a2;
     bottom: 0;
     left: 20px;
+    z-index: -1;
 }
 header nav {
     display: flex;
@@ -78,21 +80,36 @@ header nav {
 header nav ul {
     display: flex;
 }
-header nav ul li {
-    padding: 40px 10px;
-}
 header nav ul li a {
+    display: block;
+    padding: 40px 10px;
+    font-size: 13px;
     color: white;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
-.search {
-    font-size: 18px;
-    color: white;
-    margin-left: 20px;
-    position: relative;
-    border-left: 1px solid white;
-    width: 40px;
-    height: 20px;
-    align-content: flex-end;
+header nav ul li a:hover,
+header nav ul .active {
+    color: var(--main-color);
+    border-bottom: solid 1px var(--main-color);
 }
 
+.search {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border-left: 1px solid white;
+}
+.search i {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
 /* Header-End */
