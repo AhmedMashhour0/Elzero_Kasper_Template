@@ -56,7 +56,6 @@ header {
     width: 100%;
     left: 0;
 }
-
 header .container {
     display: flex;
     justify-content: space-between;
@@ -96,15 +95,14 @@ header nav ul .active {
     color: var(--main-color);
     border-bottom: solid 1px var(--main-color);
 }
-
-.search {
+header .search {
     position: relative;
     width: 40px;
     height: 40px;
     margin-left: 30px;
     border-left: 1px solid white;
 }
-.search i {
+header .search i {
     color: white;
     position: absolute;
     font-size: 20px;
