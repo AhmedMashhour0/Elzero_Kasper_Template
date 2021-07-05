@@ -49,17 +49,18 @@ a {
 }
 /* Global Rules-End */
 /* Repeated Components-Start */
-.main-header {
+/* Head-Start */
+.main-head {
     text-align: center;
 }
-.main-header h2 {
+.main-head h2 {
     position: relative;
     font-size: 40px;
     text-transform: uppercase;
     font-weight: normal;
     margin-bottom: 60px;
 }
-.main-header h2::before {
+.main-head h2::before {
     content: "";
     position: absolute;
     width: 125px;
@@ -69,7 +70,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
 }
-.main-header h2::after {
+.main-head h2::after {
     content: "";
     position: absolute;
     width: 15px;
@@ -81,13 +82,26 @@ a {
     left: 50%;
     transform: translateX(-50%);
 }
-.main-header p {
+.main-head p {
     width: 500px;
     max-width: 100%;
     line-height: 2;
     color: #666;
     margin: 0 auto 100px;
 }
+/* Head-End */
+/* Button-Start */
+.button {
+    display: block;
+    width: fit-content;
+    color: white;
+    font-weight: 600;
+    background-color: var(--main-color);
+    margin: 30px auto 0;
+    padding: 15px 25px;
+    text-transform: uppercase;
+}
+/* Button-End */
 /* Repeated Components-End */
 /* Header-Start */
 header {
@@ -477,13 +491,4 @@ header .search i {
 }
 /* Box Hover-End */
 /* Gallery-End */
-.portfolio .button {
-    display: block;
-    width: fit-content;
-    padding: 15px;
-    color: white;
-    background-color: var(--main-color);
-    margin: 30px auto;
-    text-transform: uppercase;
-}
 /* Portfolio-End */
