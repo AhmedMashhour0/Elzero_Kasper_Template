@@ -477,4 +477,13 @@ header .search i {
 }
 /* Box Hover-End */
 /* Gallery-End */
+.portfolio .button {
+    display: block;
+    width: fit-content;
+    padding: 15px;
+    color: white;
+    background-color: var(--main-color);
+    margin: 30px auto;
+    text-transform: uppercase;
+}
 /* Portfolio-End */
