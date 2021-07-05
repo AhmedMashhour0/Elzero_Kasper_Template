@@ -57,7 +57,7 @@ a {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: normal;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 .main-header h2::before {
     content: "";
@@ -65,7 +65,7 @@ a {
     width: 125px;
     height: 3px;
     background-color: #555;
-    bottom: -20px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -76,7 +76,7 @@ a {
     height: 15px;
     border-radius: 50%;
     border: 2px solid var(--light-color);
-    bottom: -27px;
+    bottom: -37px;
     background-color: white;
     left: 50%;
     transform: translateX(-50%);
@@ -384,3 +384,97 @@ header .search i {
     margin-right: 20px;
 }
 /* Design-End */
+/* Portfolio-Start */
+.portfolio {
+    padding: var(--main-padding);
+}
+.portfolio .shuffle {
+    display: flex;
+    justify-content: center;
+}
+.portfolio .shuffle li {
+    padding: 10px;
+}
+.portfolio .shuffle .active {
+    background-color: var(--main-color);
+    color: white;
+}
+/* Gallery-Start */
+.portfolio .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.portfolio .gallery .box {
+    flex-basis: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .gallery .box::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    background-color: rgb(0 0 0 / 50%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+@media (min-width: 768px) {
+    .portfolio .gallery .box {
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .portfolio .gallery .box {
+        flex-basis: 25%;
+    }
+}
+.portfolio .gallery .box img {
+    transition: var(--transition);
+    max-width: 100%;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.portfolio .gallery .caption {
+    position: absolute;
+    padding: 15px;
+    bottom: -100px;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.portfolio .gallery .caption h4 {
+    margin-bottom: 10px;
+}
+.portfolio .gallery .caption p {
+    color: var(--main-color);
+}
+/* Box Hover-Start */
+.portfolio .gallery .box:hover img {
+    transform: rotate(3deg) scale(1.1);
+    -webkit-transform: rotate(3deg) scale(1.1);
+    -moz-transform: rotate(3deg) scale(1.1);
+    -ms-transform: rotate(3deg) scale(1.1);
+    -o-transform: rotate(3deg) scale(1.1);
+}
+.portfolio .gallery .box:hover .caption {
+    bottom: 0;
+}
+.portfolio .gallery .box:hover::before {
+    top: 0;
+    z-index: 4;
+}
+/* Box Hover-End */
+/* Gallery-End */
+/* Portfolio-End */
