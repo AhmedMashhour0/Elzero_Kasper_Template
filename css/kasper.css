@@ -89,6 +89,11 @@ a {
     color: #666;
     margin: 0 auto 100px;
 }
+@media (max-width: 767px) {
+    .main-head p {
+        margin-bottom: 60px;
+    }
+}
 /* Head-End */
 /* Overlay-Start */
 .overlay {
@@ -522,12 +527,20 @@ header .search i {
 /* Video-End */
 /* About-Start */
 .about {
-    position: relative;
-    padding: var(--main-padding);
-    height: 600px;
+    text-align: center;
+    padding-top: 60px;
     overflow: hidden;
 }
-.about .image {
-    text-align: center;
+.about img {
+    position: relative;
+    max-width: 100%;
+    bottom: -120px;
 }
+@media (max-width: 767px) {
+    .about img {
+        bottom: -100px;
+        margin-top: -75px;
+    }
+}
+
 /* About-End */
