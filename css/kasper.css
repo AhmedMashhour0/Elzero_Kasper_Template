@@ -105,11 +105,16 @@ a {
     display: block;
     width: fit-content;
     color: white;
-    font-weight: 600;
+    font-weight: normal;
     background-color: var(--main-color);
     margin: 30px auto 0;
     padding: 15px 25px;
     text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 /* Button-End */
 /* Repeated Components-End */
@@ -221,7 +226,6 @@ header .search i {
     justify-content: flex-end;
     width: 50%;
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
     background-color: var(--transparent);
 }
@@ -354,7 +358,6 @@ header .search i {
 .design .image,
 .design .text {
     position: relative;
-    z-index: 5;
     flex: 1;
 }
 .design .image {
@@ -488,6 +491,43 @@ header .search i {
 /* Video-Start */
 .video {
     position: relative;
-    
+}
+.video video {
+    width: 100%;
+}
+.video .text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background-color: var(--transparent);
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.video .text h3 {
+    font-weight: normal;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.video .button {
+    border: none;
+    background-color: black;
 }
 /* Video-End */
+/* About-Start */
+.about {
+    position: relative;
+    padding: var(--main-padding);
+    height: 600px;
+    overflow: hidden;
+}
+.about .image {
+    text-align: center;
+}
+/* About-End */
