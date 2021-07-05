@@ -555,6 +555,12 @@ header .search i {
     border: none;
     background-color: black;
 }
+.video .btn-black:hover {
+    color: black;
+}
+.video .btn-black:hover::before {
+    background-color: white;
+}
 /* Video-End */
 /* About-Start */
 .about {
@@ -846,5 +852,11 @@ header .search i {
 }
 .pricing .contact p {
     font-size: 20px;
+}
+.pricing .contact .btn-contact:hover {
+    color: white;
+}
+.pricing .contact .btn-white:hover::before {
+    background-color: black;
 }
 /* Pricing-End */
