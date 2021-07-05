@@ -727,18 +727,22 @@ header .search i {
 }
 .quote q {
     display: block;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 .quote q::before {
     content: "\f10d";
     font-weight: 900;
     font-family: "Font awesome 5 free";
+    font-size: 20px;
+    margin-right: 15px;
 }
 .quote q::after {
     content: "\f10e";
     font-weight: 900;
     font-family: "Font awesome 5 free";
+    font-size: 20px;
+    margin-left: 15px;
 }
 
 /* Quote-End */
