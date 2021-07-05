@@ -28,6 +28,7 @@ a {
 .container {
     padding: 0 20px;
     margin: 0 auto;
+    position: relative;
 }
 /* Medium devices (768px and up) */
 @media (min-width: 768px) {
@@ -712,3 +713,32 @@ header .search i {
     right: -10px;
 }
 /* Skills-End */
+/* Quote-Start */
+.quote {
+    padding: var(--main-padding);
+    background-image: url(../images/quote.jpg);
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.quote .overlay{
+    background-color: rgb(0 0 0 / 80%);
+}
+.quote q {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.quote q::before {
+    content: "\f10d";
+    font-weight: 900;
+    font-family: "Font awesome 5 free";
+}
+.quote q::after {
+    content: "\f10e";
+    font-weight: 900;
+    font-family: "Font awesome 5 free";
+}
+
+/* Quote-End */
