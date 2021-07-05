@@ -990,7 +990,7 @@ subscribe form input[type="submit"]:focus {
     color: var(--light-color);
     margin-bottom: 10px;
 }
-.contact .details h4:nth-of-type(2) {
+.contact .details .address h4 {
     margin-top: 90px;
 }
 .contact .details address {
