@@ -1008,3 +1008,32 @@ subscribe form input[type="submit"]:focus {
     }
 }
 /* Contact-End */
+/* Footer-Start */
+.footer {
+    padding: 40px 0;
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.footer img {
+    margin-bottom: 30px;
+}
+.footer p:not(.copyright) {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    margin: 10px auto 30px;
+}
+.footer .social i {
+    margin: 10px 15px 50px;
+}
+.footer .copyright span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+/* Footer-End */
