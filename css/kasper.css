@@ -159,9 +159,10 @@ a {
 /* Repeated Components-End */
 /* Header-Start */
 header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     left: 0;
+    background-color: rgb(0 0 0 / 70%);
     z-index: 2;
 }
 header .container {
@@ -663,7 +664,7 @@ header .search i {
     text-align: center;
     margin-bottom: 50px;
     color: var(--light-color);
-    line-height: 2;.
+    line-height: 2;
 }
 .our-skills .test .box {
     display: flex;
@@ -847,7 +848,7 @@ header .search i {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
 }
-.pricing .plan .footer .button {
+.pricing .plan .foot .button {
     margin: 50px auto;
 }
 .pricing .contact {
